@@ -703,7 +703,6 @@ input[type="text" i] {
     visibility: visible;
     top: 50%;
     transform: translate(-50%,-50%) scale(1);
-    border-radius: 30px;
     z-index: 99999;
   }
 
