@@ -558,11 +558,10 @@ input:focus{
   .title-pd-right{
     font-size: 18px;
     margin-top: 20px;
-    margin-bottom: 6px;
   }
 
   .flex-content-pd{
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     font-size: 12px;
   }
 
