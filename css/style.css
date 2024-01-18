@@ -1416,6 +1416,10 @@ footer{
     display: none;
   }
 
+  .icon-bottom{
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
