@@ -1,6 +1,6 @@
 {
   "id": "movie-catalogue-lite-pwa-1",
-  "start_url": "/nv-commerce/index.html",
+  "start_url": "index.html",
   "name": "NVMEE.ID",
   "short_name": "NVMEE",
   "description": "NVMEE PWA",
@@ -9,49 +9,49 @@
   "theme_color": "#6290D6",
   "icons": [
     {
-      "src": "/nv-commerce/asset/icons/nvmee72.png",
+      "src": "/asset/icons/nvmee72.png",
       "sizes": "72x72",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/nv-commerce/asset/icons/nvmee96.png",
+      "src": "/asset/icons/nvmee96.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/nv-commerce/asset/icons/nvmee128.png",
+      "src": "/asset/icons/nvmee128.png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/nv-commerce/asset/icons/nvmee144.png",
+      "src": "/asset/icons/nvmee144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/nv-commerce/asset/icons/nvmee152.png",
+      "src": "/asset/icons/nvmee152.png",
       "sizes": "152x152",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/nv-commerce/asset/icons/nvmee192.png",
+      "src": "/asset/icons/nvmee192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/nv-commerce/asset/icons/nvmee384.png",
+      "src": "/asset/icons/nvmee384.png",
       "sizes": "384x384",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/nv-commerce/asset/icons/nvmee512.png",
+      "src": "/asset/icons/nvmee512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
