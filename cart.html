@@ -1,0 +1,427 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVMEE.ID || Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://api.fontshare.com/v2/css?f[]=montserrat@700,200,400,100,800,300,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/product-detail.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#9E97C9"/>
+  <link rel="apple-touch-icon" href="/asset/icons/nvmee192.png">
+  <link rel="icon" href="/asset/icons/nvmee512.png">
+</head>
+<header>
+  <div class="top-header">
+    <div>NVMEE.ID</div>
+    <div class="voucher-top-header">
+      <div>+VOUCHER 20%</div>
+      <i class="fa-solid fa-tag"></i>
+    </div>
+    <div class="freegift-top-header">
+      <div>+FREE GIFT</div>
+      <i class="fa-solid fa-gift"></i>
+    </div>
+    <div class="freeongkir-top-header">
+      <div>+Gratis Ongkir 24 Jam</div>
+      <i class="fa-solid fa-truck"></i>
+    </div>
+  </div>
+
+  <div id="scroll-nav">
+    <div class="top-nav" id="scroll-img">
+      <img class="top-img-nav" src="asset/img/nav-logo.png" alt="nvmee-icon">
+    </div>
+    <nav id="scroll-padding-nav">
+      <div class="nav-toggle" id="nav-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav-close" id="nav-close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="left-navbar" id="scroll-left-nav">
+        <div class="left-nav-content" id="left-menu">
+          <div class="nav-close" id="nav-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <ul class="left-ul-list">
+            <li class="li-left"><a class="a-nav" href="/index.html">Home</a></li>
+            <li class="li-left"><a class="a-nav" href="/all-product.html">Products</a></li>
+            <li class="li-left"><a class="a-nav" href="/about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="nav-menu" id="scroll-nav-menu">
+        <ul>
+          <!-- <li class="right-nav"><input class="input-home" name="text" placeholder="Search..." type="search"></li> -->
+          <li class="right-nav"><a href="/all-product.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+          <li class="right-nav"><a href="/cart.html"><i class="fa-solid fa-user"></i></a></li>
+          <li class="right-nav"><a class="a-nav-right" href="/cart.html"><i class="fa-solid fa-cart-shopping position-relative"><div class="content-in-cart">29</div></i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+<body>
+  <section class="cart">
+    <div class="cart-flex">
+      <div class="cart-top-title fw-bold">Shopping Bag</div>
+    </div>
+    <div class="cart-container">
+        <div class="box-cart-container-1">
+
+          <div class="choose-all-product-cart"> 
+            <div class="flex-cb">
+              <div class="checkbox-wrapper-31">
+                <input type="checkbox"  onClick="toggle(this)"/>
+                <svg viewBox="0 0 35.6 35.6">
+                  <rect class="background" x="0" y="0" width="35.6" height="35.6"></rect>
+                  <polyline class="check" points="9.5 17 15.8 22 25 12.5"></polyline>
+                </svg>
+              </div>         
+              <div class="select-all">Select All</div>
+            </div>
+            <div class="delete-all-product">Delete All</div>
+          </div>
+
+          <hr class="hr-cart">
+
+            <div class="card-product-buy">
+              <div class="left-card">
+                <div class="flex-cart-check-box">
+                  <div class="choose-all-product-cart">
+                    <div class="checkbox-wrapper-31">
+                      <input type="checkbox" name="foo"/>
+                      <svg viewBox="0 0 35.6 35.6">
+                        <rect class="background" x="0" y="0" width="35.6" height="35.6"></rect>
+                        <polyline class="check" points="9.5 17 15.8 22 25 12.5"></polyline>
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="asset/img/toner.png" alt="">
+                </div>
+                <div class="product-buy-content">
+                  <div class="flex-info-cart">
+                    <div class="inner-flex-info-cart">
+                      <div class="title-product-cart">lorem opsum</div>
+                      <div class="detail-product-cart">lorem opsum</div>
+                      <div class="variant-product-cart">Size: 13ml</div>
+                    </div>
+                  </div>
+                  <div class="prices-cart">
+                    <div class="price-cart-perproduct">Rp.300.000</div>
+                  </div>
+                  <div class="input-btn-cart">
+                    <a href="" class="mr-20-cart mr-10"><i class="fa-solid fa-trash-can"></i></a>
+                    <div class="quantity-container">
+                      <div class="quantity-btn" onclick="decreaseValue(this)"><i class="fa-solid fa-minus"></i></div>
+                      <input type="number" class="quantity-input" value="1" min="1" max="999">
+                      <div class="quantity-btn" onclick="increaseValue(this)"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-product-buy">
+              <div class="left-card">
+                <div class="flex-cart-check-box">
+                  <div class="choose-all-product-cart">
+                    <div class="checkbox-wrapper-31">
+                      <input type="checkbox" name="foo"/>
+                      <svg viewBox="0 0 35.6 35.6">
+                        <rect class="background" x="0" y="0" width="35.6" height="35.6"></rect>
+                        <polyline class="check" points="9.5 17 15.8 22 25 12.5"></polyline>
+                      </svg>
+                    </div>
+                  </div>
+                  <img src="asset/img/toner.png" alt="">
+                </div>
+                <div class="product-buy-content">
+                  <div class="flex-info-cart">
+                    <div class="inner-flex-info-cart">
+                      <div class="title-product-cart">lorem opsum</div>
+                      <div class="detail-product-cart">lorem opsum</div>
+                      <div class="variant-product-cart">Size: 13ml</div>
+                    </div>
+                  </div>
+                  <div class="prices-cart">
+                    <div class="price-cart-perproduct">Rp.300.000</div>
+                  </div>
+                  <div class="input-btn-cart">
+                    <a href="" class="mr-20-cart mr-10"><i class="fa-solid fa-trash-can"></i></a>
+                    <div class="quantity-container">
+                      <div class="quantity-btn" onclick="decreaseValue(this)"><i class="fa-solid fa-minus"></i></div>
+                      <input type="number" class="quantity-input" value="1" min="1" max="999">
+                      <div class="quantity-btn" onclick="increaseValue(this)"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+        
+
+        <div class="fixed-bottom-bar">
+          <form action="/check-out.html" class="form-co">
+          <div class="total-price-cart">
+            <div class="v-cart-title">Voucher</div>
+            <div class="v-2">Pilih Voucher disini</div>
+            <hr class="hr-carts">
+            <!-- <div class="voucher-container">
+              <div class="voucher-input-co">
+                <i class="fa-solid fa-percent"></i>
+                <div class="info-voucher-co">
+                  <div class="title-voucher">Payday Voucher Up To 120k</div>
+                  <div class="date-voucher">31 December 2023</div>
+                </div>
+              </div>
+              <hr>
+              <div class="voucher-input-co">
+                <i class="fa-solid fa-percent"></i>
+                <div class="info-voucher-co">
+                  <div class="title-voucher">Payday Voucher Up To 120k</div>
+                  <div class="date-voucher">31 December 2023</div>
+                </div>
+              </div>
+            </div> -->
+            <div class="box-search-voucher" id="pop-up-voucher" onclick="OpenPopupVoucher()">
+              <img src="asset/img/BG-Voucher.png" class="bg-img-voucher" alt="" srcset="">
+              <div class="title-bg-img-voucher">
+                Search Voucher
+              </div>
+            </div>
+          </div>
+            <div class="total-cart">
+              <div class="block-total-cart flex-fixed-bb">
+                <div class="sub-total-co">Subtotal</div>
+                <h5 class="price-co">Rp 0.00</h5>
+              </div>
+              <button class="btn-cart">Checkout</button>
+            </div>
+        </form>
+        </div>
+    </div>
+  </section>
+
+  <!-- popup voucher -->
+
+  <div class="pop-up-voucher-bg">
+  </div>
+
+  <div class="pop-up-voucher">
+
+    <div class="voucher-pop-up-container">
+      
+      <div class="flex-title-search">
+        <div class="title-vpop">Voucher</div>
+        <div class="group">
+          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+          <input placeholder="Enter voucher code" type="search" class="input">
+        </div>
+      </div>
+
+      <hr class="hr-vpop">
+
+      <div class="title-promo-vpop mb-2">
+        Payment Voucher
+      </div>
+      <div class="promo-container-vpop">
+
+          <div class="promo-box-vpop">
+            <img src="asset/img/Discount.png" alt="">
+            <div class="right-content-vpop">
+              <div class="title-r-vpop">NVMEE x GIICOMMERCE DEALS</div>
+              <div class="second-title-r-vpop">Get voucher 15% off with min. Rp 350.000</div>
+              <div class="flex-vpop">
+                <i class="fa-regular fa-clock"></i>
+                <div class="date-vpop">Berlaku hingga 31 January 2024</div>
+              </div>
+              <div class="radio-wrapper-26 cb-vpop">
+                <input type="radio" id="_radio-26" name="radio-group-voucher-payment">
+                <label for="_radio-26">
+                  <div class="tick_mark"></div>
+                </label>
+              </div>            
+            </div>
+          </div>
+
+          <div class="promo-box-vpop">
+            <img src="asset/img/Discount.png" alt="">
+            <div class="right-content-vpop">
+              <div class="title-r-vpop">NVMEE x GIICOMMERCE DEALS</div>
+              <div class="second-title-r-vpop">Get voucher 15% off with min. Rp 350.000</div>
+              <div class="flex-vpop">
+                <i class="fa-regular fa-clock"></i>
+                <div class="date-vpop">Berlaku hingga 31 January 2024</div>
+              </div>
+              <div class="radio-wrapper-26 cb-vpop">
+                <input type="radio" id="_radio-27" name="radio-group-voucher-payment">
+                <label for="_radio-27">
+                  <div class="tick_mark"></div>
+                </label>
+              </div>             
+            </div>
+          </div>
+
+      </div>
+
+      <div class="title-promo-vpop mb-2">
+        Shipment Discount
+      </div>
+      <div class="promo-container-vpop">
+
+          <div class="promo-box-vpop">
+            <img src="asset/img/Discount.png" alt="">
+            <div class="right-content-vpop">
+              <div class="title-r-vpop">NVMEE x GIICOMMERCE DEALS</div>
+              <div class="second-title-r-vpop">Get voucher 15% off with min. Rp 350.000</div>
+              <div class="flex-vpop">
+                <i class="fa-regular fa-clock"></i>
+                <div class="date-vpop">Berlaku hingga 31 January 2024</div>
+              </div>
+              <div class="radio-wrapper-26 cb-vpop">
+                <input type="radio" id="_radio-28" name="radio-group-voucher-shipping">
+                <label for="_radio-28">
+                  <div class="tick_mark"></div>
+                </label>
+              </div>             
+            </div>
+          </div>
+
+          <div class="promo-box-vpop">
+            <img src="asset/img/Discount.png" alt="">
+            <div class="right-content-vpop">
+              <div class="title-r-vpop">NVMEE x GIICOMMERCE DEALS</div>
+              <div class="second-title-r-vpop">Get voucher 15% off with min. Rp 350.000</div>
+              <div class="flex-vpop">
+                <i class="fa-regular fa-clock"></i>
+                <div class="date-vpop">Berlaku hingga 31 January 2024</div>
+              </div>
+              <div class="radio-wrapper-26 cb-vpop">
+                <input type="radio" id="_radio-29" name="radio-group-voucher-shipping">
+                <label for="_radio-29">
+                  <div class="tick_mark"></div>
+                </label>
+              </div>              
+            </div>
+          </div>
+
+          <div class="promo-box-vpop">
+            <img src="asset/img/Discount.png" alt="">
+            <div class="right-content-vpop">
+              <div class="title-r-vpop">NVMEE x GIICOMMERCE DEALS</div>
+              <div class="second-title-r-vpop">Get voucher 15% off with min. Rp 350.000</div>
+              <div class="flex-vpop">
+                <i class="fa-regular fa-clock"></i>
+                <div class="date-vpop">Berlaku hingga 31 January 2024</div>
+              </div>
+              <div class="radio-wrapper-26 cb-vpop">
+                <input type="radio" id="_radio-30" name="radio-group-voucher-shipping">
+                <label for="_radio-30">
+                  <div class="tick_mark"></div>
+                </label>
+              </div>                
+            </div>
+          </div>
+
+      </div>
+
+        <button class="btn-vpop" onclick="ClosePopupVoucher()">Submit</button>
+    </div>
+      
+  </div>
+
+  <section class="icon-bottom">
+    <img src="asset/img/iconbtm.png" alt="">
+  </section>
+
+  <footer class="footer-home">
+    <div class="cus-flex">
+      <div class="footer-info">
+        <h5>INFORMATION</h5>
+        <div class="link-footer"><a href="">Home</a></div>
+        <div class="link-footer"><a href="">Products</a></div>
+        <div class="link-footer"><a href="">About Us</a></div>
+        <div class="cus-phone mt-5">
+          <h5>CUSTOMER CARE</h5>
+          <div class="cus-flex">
+            <div class="contact-info"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-info">&nbsp;+62 666 6666 6666</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info m-footer">
+        <h5>ACCOUNT</h5>
+        <div class="link-footer"><a href="">Home</a></div>
+        <div class="link-footer"><a href="">Products</a></div>
+        <div class="link-footer"><a href="">About Us</a></div>
+      </div>
+    </div>
+    <div class="footer-cus">
+      <div class="title-footer-cus">
+        HEY #NVMEEbabes
+      </div>
+      <div class="title-footer-cus">
+        LET’S KEEP IN TOUCH!
+      </div>
+      <div class="sosmed">
+        <h5 class="left-sosmed"><i class="fa-brands fa-facebook-f"></i></h5>
+        <h5 class="left-sosmed"><i class="fa-brands fa-instagram"></i></h5>
+      </div>
+      <div class="contact-email">
+        <div class="contact-email-flex">
+          <input type="email" placeholder="enter your email" name="" id="">
+          <button>SUBMIT</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<script>
+function toggle(source) {
+  checkboxes = document.getElementsByName('foo');
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
+</script>
+
+<script>
+
+ // search voucher
+
+ let popupSearchVoucher = document.getElementById("pop-up-voucher");
+ let popupSearchVoucherContainer = document.querySelector(".pop-up-voucher");
+ let popupSearchVoucherBg = document.querySelector(".pop-up-voucher-bg");
+ 
+ function OpenPopupVoucher(){
+    popupSearchVoucherContainer.classList.remove("open-popup-voucher");
+    popupSearchVoucherBg.classList.remove("open-popup-voucher-bg")
+    popupSearchVoucherContainer.classList.add("open-popup-voucher");
+    popupSearchVoucherBg.classList.add("open-popup-voucher-bg")
+ }
+ 
+ function ClosePopupVoucher(){
+  popupSearchVoucherContainer.classList.remove("open-popup-voucher");
+   popupSearchVoucherBg.classList.remove("open-popup-voucher-bg")
+ }
+
+</script>
+
+<script src="javascript/quantity-btn.js"></script>
+<script src="javascript/product-detail.js"></script>
+<script src="javascript/hamburger.js"></script>
+<script src="javascript/scrollnav.js"></script>
+<script src="javascript/cart-empty.js"></script>
