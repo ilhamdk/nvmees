@@ -447,6 +447,16 @@
     }
   }
 
+  @media screen and (max-width: 450px) {
+    .all-product-card{
+      gap: 4%;
+    }
+
+    .m-autos{
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (max-width: 400px) {
     .title-ap{
       font-size: 12px;
