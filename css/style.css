@@ -1781,4 +1781,16 @@ footer{
   .show-img-nav{
     width: 40%;
   }
+
+  .title-product-promo{
+    font-size: 11px;
+  }
+
+  .flex-promo-price s{
+    font-size: 13px;
+  }
+
+  .promo-price{
+    font-size: 12px;
+  }
 }
