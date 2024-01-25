@@ -475,4 +475,10 @@
     .all-product-card{
       gap: 2%;
     }
+
+    .all-product-promo{
+      width: 35px;
+      height: 35px;
+      font-size: 11px;
+    }
   }
