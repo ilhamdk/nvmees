@@ -1794,3 +1794,27 @@ footer{
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 370px) {
+  .card-promo{
+    width: 140px;
+  }
+
+  .img-card-promo{
+    width: 140px;
+    height: 140px;
+  }
+
+  .img-card-promo img{
+    width: 140px;
+    height: 140px;
+  }
+
+  .promo-price{
+    font-size: 11px;
+  }
+
+  .flex-promo-price s{
+    font-size: 12px;
+  }
+}
