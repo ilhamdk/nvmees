@@ -15,16 +15,17 @@ function toggleMenu() {
     if (leftMenu.classList.contains("show-menu")) {
         navToggle.style.display = "none";
         navClose.style.display = "block";
+        navClose.style.left = "250px";
+        navClose.style.transition = "0.75s";
     } else {
         navToggle.style.display = "block";
-        navClose.style.display = "none";
+        navClose.style.left = "-250px";
     }
 }
 
 function updateNavVisibility() {
     var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     navToggle.style.display = windowWidth > 767 ? "none" : "block";
-    navClose.style.display = "none";
 }
 
 updateNavVisibility();
