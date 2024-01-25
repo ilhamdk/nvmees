@@ -1012,6 +1012,10 @@ input[type="text" i] {
       height: 100%;
       padding: 0px;
     }
+
+    .ml-10{
+      margin-right: 0px !important;
+    }
   }
 
   hr.hr-dot {
