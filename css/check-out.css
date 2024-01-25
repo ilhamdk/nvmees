@@ -478,6 +478,11 @@ input[type="text" i] {
     height: 140px;
   }
 
+  .img-co-disc{
+    width: 40px;
+    height: 40px;
+  }
+
   .right-card-product-co img {
     width: 80px;
     height: 80px;
@@ -1109,6 +1114,26 @@ input[type="text" i] {
   @media screen and (max-width: 550px) {
     .mb-180-resp{
       margin-bottom: 205px;
+    }
+
+    .so-title{
+      font-size: 12px;
+    }
+
+    .so-estimation{
+      font-size: 10px;
+    }
+
+    .so-price{
+      font-size: 12px;
+    }
+
+    .so-title img{
+      margin-bottom: 10px;
+    }
+
+    .so-atm{
+      font-size: 12px;
     }
   }
 
