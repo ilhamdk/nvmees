@@ -187,15 +187,14 @@
   padding: 10px 0px;
   margin: 4px;
   border-radius: 15px;
-  cursor: pointer; 
   color: #58585A;
 }
 
-.voucher-input-co.active,
+/* .voucher-input-co.active,
 .voucher-input-co:hover {
   background: #E17EAC;
   color: #fff;
-}
+} */
 
 .voucher-input-co i {
   font-size: 16px;
