@@ -459,10 +459,20 @@
 
   @media screen and (max-width: 400px) {
     .title-ap{
-      font-size: 12px;
+      font-size: 11px;
     }
 
     .input{
       font-size: 9px;
+      height: 30px;
+    }
+
+    .icon{
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+
+    .all-product-card{
+      gap: 2%;
     }
   }
