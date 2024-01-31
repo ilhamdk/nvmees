@@ -535,10 +535,6 @@
 
 /* checkbox  */
 
-.checkbox-wrapper-31:hover .check {
-  stroke-dashoffset: 0;
-}
-
 .checkbox-wrapper-31 {
   position: relative;
   display: inline-block;
